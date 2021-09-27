@@ -26,7 +26,7 @@ module "eks" {
       instance_type                 = var.instance_type
       additional_userdata           = "worker-1"
       associate_public_ip_address   = true
-      key_name                      = "ssh-key"
+      key_name                      = "ssh-key-2"
       asg_desired_capacity          = 1
       subnets                       = [var.subnets[0]]
       platform                      = "linux"
@@ -51,8 +51,8 @@ module "eks" {
   ]
 }
 
-resource "aws_key_pair" "ssh-key" {
-  key_name   = "ssh-key"
+resource "aws_key_pair" "ssh-key-2" {
+  key_name   = "ssh-key-2"
   public_key = "${var.ssh_key}"
 }
 
