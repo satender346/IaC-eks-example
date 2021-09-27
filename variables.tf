@@ -20,5 +20,5 @@ variable "vpc" {
 
 variable "instance_type" {
   description = "Instance Type"
-  default = "t2.micro"
+  default = "t2.large"
 }
