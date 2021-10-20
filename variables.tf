@@ -10,7 +10,7 @@ variable "ssh_key" {
 
 variable "subnets" {
   description = "subnets for workers"
-  default = ["subnet-03f6d9e3aecd48606", "subnet-030027c7036fb64eb"]
+  default = ["subnet-002a5c83c5b2d278a", "subnet-053f4ad9242e176e3"]
 }
 
 variable "vpc" {
