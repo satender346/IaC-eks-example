@@ -10,12 +10,12 @@ variable "ssh_key" {
 
 variable "subnets" {
   description = "subnets for workers"
-  default = ["subnet-002a5c83c5b2d278a", "subnet-053f4ad9242e176e3"]
+  default = ["subnet-015829f47d96dde78", "subnet-09d8714d550c3a20e"]
 }
 
 variable "vpc" {
   description = "VPC ID"
-  default = "vpc-0f85a44b5751358c2"
+  default = "vpc-02d6d6f10e22e5bee"
 }
 
 variable "instance_type" {
