@@ -26,7 +26,7 @@ module "eks" {
       instance_type                 = var.instance_type
       additional_userdata           = "worker-1"
       associate_public_ip_address   = true
-      key_name                      = "ssh-key-2"
+      key_name                      = "ssh-key-3"
       asg_desired_capacity          = 1
       subnets                       = [var.subnets[0]]
       platform                      = "linux"
@@ -40,7 +40,7 @@ module "eks" {
  #     additional_userdata           = "worker-2"
  #     platform                      = "windows"
  #     associate_public_ip_address   = true
- #     key_name                      = "ssh-key"
+ #     key_name                      = "ssh-key-3"
  #     subnets                       = [var.subnets[0]]
  #     additional_security_group_ids = [aws_security_group.worker_group_mgmt_two.id]
  #     asg_desired_capacity          = 1
@@ -51,8 +51,8 @@ module "eks" {
   ]
 }
 
-resource "aws_key_pair" "ssh-key-2" {
-  key_name   = "ssh-key-2"
+resource "aws_key_pair" "ssh-key-3" {
+  key_name   = "ssh-key-3"
   public_key = "${var.ssh_key}"
 }
 
